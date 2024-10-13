@@ -26,6 +26,14 @@ class Product {
         $this->image = $image;
         $this->setCategory($category);
     }
+    
+    public function getCategory() {
+        return $this->category;
+    }
+    
+    public function setCategory(Category|null $category) {
+        $this->category = $category;
+    }
 }
 ?>
 <!DOCTYPE html>
