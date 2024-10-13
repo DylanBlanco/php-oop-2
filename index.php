@@ -15,6 +15,17 @@ class Product {
     public $price;
     public $image;
     public $category;
+
+    function __construct(
+        string $title,
+        float $price,
+        string $image,
+        Category $category = null) {
+        $this->title = $title;
+        $this->price = $price;
+        $this->image = $image;
+        $this->setCategory($category);
+    }
 }
 ?>
 <!DOCTYPE html>
